@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hype — Sua própria plataforma de venda de ingressos</title>
+  <meta name="description" content="Tenha sua própria plataforma de venda de ingressos com a sua marca, no seu domínio. Tecnologia pronta. Sem precisar de equipe técnica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <nav class="container header__nav">
+      <a href="#" class="header__logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor" class="logo-bg"/>
+          <path d="M10 10h4v12h-4zM18 10h4v12h-4zM14 14h4v4h-4z" fill="#fff"/>
+        </svg>
+        <span>Hype</span>
+      </a>
+
+      <ul class="header__links" id="navLinks">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#comparacao">Comparação</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a href="#contato" class="btn btn--primary header__cta">Fale conosco</a>
+
+      <button class="header__hamburger" id="hamburger" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__header">
+        <a href="#" class="header__logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#7C3AED"/>
+            <path d="M10 10h4v12h-4zM18 10h4v12h-4zM14 14h4v4h-4z" fill="#fff"/>
+          </svg>
+          <span>Hype</span>
+        </a>
+        <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Fechar menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-menu__links">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#comparacao">Comparação</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contato" class="btn btn--primary mobile-menu__cta">Fale conosco</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Sua própria plataforma de venda de ingressos — com a sua marca, no seu domínio.</h1>
+          <p class="hero__subtitle">Tudo pronto para usar. Sem precisar de equipe de tecnologia. Você cria, personaliza e vende.</p>
+          <a href="#contato" class="btn btn--primary btn--lg hero__cta">Quero conhecer o Hype</a>
+        </div>
+
+        <div class="hero__visual">
+          <div class="mockup">
+            <div class="mockup__bar">
+              <div class="mockup__dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup__url">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>www.arenaproducoes.com.br</span>
+              </div>
+            </div>
+            <div class="mockup__content">
+              <div class="mockup__site-header">
+                <span class="mockup__brand">Arena Produções</span>
+                <span class="mockup__nav-dots">● ● ●</span>
+              </div>
+              <div class="mockup__event">
+                <div class="mockup__banner">
+                  <span class="mockup__banner-text">Festival de Verão 2026</span>
+                </div>
+                <div class="mockup__event-info">
+                  <span class="mockup__date">📅 15 Jan · Arena Beach Club</span>
+                  <div class="mockup__tickets">
+                    <div class="mockup__ticket">
+                      <span>Pista</span>
+                      <span>R$ 80</span>
+                    </div>
+                    <div class="mockup__ticket">
+                      <span>VIP</span>
+                      <span>R$ 150</span>
+                    </div>
+                  </div>
+                  <div class="mockup__buy-btn">Comprar Ingresso</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDIBILIDADE ============ -->
+    <section class="credibility">
+      <div class="container">
+        <div class="credibility__grid">
+          <div class="credibility__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Pagamentos seguros</span>
+          </div>
+          <div class="credibility__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Tecnologia 100% brasileira</span>
+          </div>
+          <div class="credibility__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <span>Suporte humano e dedicado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMAS / DOR ============ -->
+    <section class="problems" id="problemas">
+      <div class="container">
+        <h2 class="section-title">Você ainda vende ingressos na plataforma dos outros?</h2>
+        <div class="problems__grid">
+
+          <div class="card card--problem">
+            <div class="card__icon card__icon--problem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" x2="22" y1="2" y2="22"/></svg>
+            </div>
+            <h3 class="card__title">Sua marca fica escondida</h3>
+            <p class="card__text">Seu público compra na plataforma de terceiros. Quem ganha reconhecimento é a plataforma — não você.</p>
+          </div>
+
+          <div class="card card--problem">
+            <div class="card__icon card__icon--problem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+            </div>
+            <h3 class="card__title">Seus clientes não são seus</h3>
+            <p class="card__text">A base de compradores fica presa em outro sistema. Você não tem acesso direto para se comunicar ou fidelizar.</p>
+          </div>
+
+          <div class="card card--problem">
+            <div class="card__icon card__icon--problem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            </div>
+            <h3 class="card__title">Seus concorrentes aparecem ao lado</h3>
+            <p class="card__text">Na mesma página onde vendem seu ingresso, o público vê eventos concorrentes competindo pela atenção.</p>
+          </div>
+
+          <div class="card card--problem">
+            <div class="card__icon card__icon--problem">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="card__title">Você não controla nada</h3>
+            <p class="card__text">Regras, taxas, layout — tudo definido por quem controla a plataforma. Você só preenche os campos.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="how-it-works" id="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Com o Hype, você tem sua própria plataforma em minutos.</h2>
+        <div class="steps">
+
+          <div class="step">
+            <div class="step__number">1</div>
+            <h3 class="step__title">Crie sua conta</h3>
+            <p class="step__text">Cadastre-se e configure sua plataforma com sua logo, suas cores e seu domínio.</p>
+          </div>
+
+          <div class="step">
+            <div class="step__number">2</div>
+            <h3 class="step__title">Monte seu evento</h3>
+            <p class="step__text">Defina setores, lotes, preços e formulários. Tudo no seu painel, do jeito que você precisa.</p>
+          </div>
+
+          <div class="step">
+            <div class="step__number">3</div>
+            <h3 class="step__title">Comece a vender</h3>
+            <p class="step__text">Compartilhe o link do seu site. Seu público compra com Pix ou cartão e recebe o ingresso na hora.</p>
+          </div>
+
+          <div class="step">
+            <div class="step__number">4</div>
+            <h3 class="step__title">Controle tudo</h3>
+            <p class="step__text">Check-in por QR Code, relatórios financeiros e gestão completa — tudo na palma da mão.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FUNCIONALIDADES ============ -->
+    <section class="features" id="vantagens">
+      <div class="container">
+        <h2 class="section-title">Tudo que você precisa para vender com profissionalismo.</h2>
+        <div class="features__grid">
+
+          <div class="card card--feature">
+            <div class="card__icon card__icon--feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M17.5 10.5c1.7 0 3 1.3 3 3v.5h-3"/><circle cx="8.5" cy="6.5" r="2.5"/><path d="M3.5 14c0-1.7 1.3-3 3-3h4c1.7 0 3 1.3 3 3v.5h-10z"/><path d="M3 20c0-1 .4-2 1.2-2.6A5 5 0 0 1 8 16h1a5 5 0 0 1 3.8 1.4c.8.6 1.2 1.6 1.2 2.6"/></svg>
+            </div>
+            <h3 class="card__title">Sua marca em tudo</h3>
+            <p class="card__text">Seu logo, suas cores, seu domínio. O Hype fica invisível para o seu público.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon card__icon--feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84z"/><path d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/><path d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/></svg>
+            </div>
+            <h3 class="card__title">Flexibilidade total</h3>
+            <p class="card__text">Pista, VIP, camarote, lotes por período — configure como quiser.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon card__icon--feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            </div>
+            <h3 class="card__title">Pagamento na hora</h3>
+            <p class="card__text">Pix e cartão de crédito integrados. Confirmação automática.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon card__icon--feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3"/><rect width="5" height="5" x="16" y="3"/><rect width="5" height="5" x="3" y="16"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>
+            </div>
+            <h3 class="card__title">Entrada sem filas</h3>
+            <p class="card__text">QR Code único por ingresso. Valide pelo celular em tempo real.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon card__icon--feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="card__title">Colete o que precisar</h3>
+            <p class="card__text">CPF, tamanho de camiseta, restrição alimentar — você decide o que perguntar.</p>
+          </div>
+
+          <div class="card card--feature">
+            <div class="card__icon card__icon--feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" x2="7.01" y1="7" y2="7"/></svg>
+            </div>
+            <h3 class="card__title">Marketing integrado</h3>
+            <p class="card__text">Crie cupons por valor ou percentual para campanhas e parceiros.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPARAÇÃO ============ -->
+    <section class="comparison" id="comparacao">
+      <div class="container">
+        <h2 class="section-title">Plataformas genéricas vs. a sua própria plataforma</h2>
+
+        <!-- Desktop table -->
+        <div class="comparison__table-wrapper">
+          <table class="comparison__table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="comparison__col--generic">Plataformas genéricas</th>
+                <th class="comparison__col--hype">Com o Hype</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="comparison__label">Marca</td>
+                <td class="comparison__col--generic">
+                  <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  A marca da plataforma
+                </td>
+                <td class="comparison__col--hype">
+                  <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  A sua marca
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__label">Base de clientes</td>
+                <td class="comparison__col--generic">
+                  <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  Da plataforma
+                </td>
+                <td class="comparison__col--hype">
+                  <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Sua
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__label">Concorrência</td>
+                <td class="comparison__col--generic">
+                  <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  Eventos concorrentes ao lado
+                </td>
+                <td class="comparison__col--hype">
+                  <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Só os seus eventos
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__label">Personalização</td>
+                <td class="comparison__col--generic">
+                  <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  Limitada
+                </td>
+                <td class="comparison__col--hype">
+                  <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Total
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__label">Controle</td>
+                <td class="comparison__col--generic">
+                  <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  Da plataforma
+                </td>
+                <td class="comparison__col--hype">
+                  <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Seu
+                </td>
+              </tr>
+              <tr>
+                <td class="comparison__label">Pagamentos</td>
+                <td class="comparison__col--generic">
+                  <svg class="icon-x" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  Gateway da plataforma
+                </td>
+                <td class="comparison__col--hype">
+                  <svg class="icon-check" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Pix e cartão no seu nome
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mobile comparison cards -->
+        <div class="comparison__mobile">
+          <div class="comparison__mobile-card">
+            <span class="comparison__mobile-label">Marca</span>
+            <div class="comparison__mobile-row comparison__mobile-row--generic">
+              <svg class="icon-x" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>A marca da plataforma</span>
+            </div>
+            <div class="comparison__mobile-row comparison__mobile-row--hype">
+              <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>A sua marca</span>
+            </div>
+          </div>
+          <div class="comparison__mobile-card">
+            <span class="comparison__mobile-label">Base de clientes</span>
+            <div class="comparison__mobile-row comparison__mobile-row--generic">
+              <svg class="icon-x" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>Da plataforma</span>
+            </div>
+            <div class="comparison__mobile-row comparison__mobile-row--hype">
+              <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Sua</span>
+            </div>
+          </div>
+          <div class="comparison__mobile-card">
+            <span class="comparison__mobile-label">Concorrência</span>
+            <div class="comparison__mobile-row comparison__mobile-row--generic">
+              <svg class="icon-x" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>Eventos concorrentes ao lado</span>
+            </div>
+            <div class="comparison__mobile-row comparison__mobile-row--hype">
+              <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Só os seus eventos</span>
+            </div>
+          </div>
+          <div class="comparison__mobile-card">
+            <span class="comparison__mobile-label">Personalização</span>
+            <div class="comparison__mobile-row comparison__mobile-row--generic">
+              <svg class="icon-x" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>Limitada</span>
+            </div>
+            <div class="comparison__mobile-row comparison__mobile-row--hype">
+              <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Total</span>
+            </div>
+          </div>
+          <div class="comparison__mobile-card">
+            <span class="comparison__mobile-label">Controle</span>
+            <div class="comparison__mobile-row comparison__mobile-row--generic">
+              <svg class="icon-x" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>Da plataforma</span>
+            </div>
+            <div class="comparison__mobile-row comparison__mobile-row--hype">
+              <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Seu</span>
+            </div>
+          </div>
+          <div class="comparison__mobile-card">
+            <span class="comparison__mobile-label">Pagamentos</span>
+            <div class="comparison__mobile-row comparison__mobile-row--generic">
+              <svg class="icon-x" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>Gateway da plataforma</span>
+            </div>
+            <div class="comparison__mobile-row comparison__mobile-row--hype">
+              <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Pix e cartão no seu nome</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS / PARA QUEM ============ -->
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <h2 class="section-title">Para quem é o Hype?</h2>
+        <p class="section-subtitle">Profissionais do ramo de eventos que querem independência e profissionalismo.</p>
+        <div class="testimonials__grid">
+
+          <div class="card card--testimonial">
+            <div class="card__avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3 class="card__title">Produtores e organizadores</h3>
+            <p class="card__text">Você já tem nome no mercado e quer fortalecer a sua marca — não a de terceiros. Com o Hype, seus clientes compram no seu site.</p>
+          </div>
+
+          <div class="card card--testimonial">
+            <div class="card__avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <h3 class="card__title">DJs e músicos</h3>
+            <p class="card__text">Venda ingressos dos seus próprios shows sem complicação. Seu público compra direto de você e você mantém o controle.</p>
+          </div>
+
+          <div class="card card--testimonial">
+            <div class="card__avatar">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="card__title">Donos de casas de show</h3>
+            <p class="card__text">Profissionalize sua operação de vendas e check-in. Relatórios financeiros, controle total e uma plataforma com a cara do seu espaço.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Perguntas frequentes</h2>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>O que é o Hype exatamente?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>O Hype é uma plataforma completa de venda de ingressos que funciona com a sua marca. Você recebe seu próprio site de vendas, painel de gestão e sistema de check-in — sem precisar desenvolver nada.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Meu público vai ver a marca do Hype?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Não. O Hype é invisível para o comprador. Ele acessa o seu site, vê a sua marca e compra na sua plataforma.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Preciso ter conhecimento técnico?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Não. O painel é intuitivo e pensado para quem não é da área de tecnologia. Se você usa redes sociais, consegue usar o Hype.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Quais formas de pagamento são aceitas?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Pix e cartão de crédito — os dois métodos mais usados no Brasil. A confirmação é automática e o ingresso é enviado por e-mail na hora.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Como funciona o check-in?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Cada ingresso tem um QR Code único. Na entrada do evento, é só escanear com o celular. O sistema valida em tempo real e impede duplicidade.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Quanto custa?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Entre em contato com nosso time para conhecer os planos disponíveis. Vamos entender sua operação e apresentar a melhor opção para você.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Já posso usar agora?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Estamos em fase de onboarding com produtores selecionados. Entre em contato para garantir sua vaga e ser um dos primeiros a usar a plataforma.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL / CONTATO ============ -->
+    <section class="cta-final" id="contato">
+      <div class="container">
+        <div class="cta-final__content">
+          <h2 class="cta-final__title">Pronto para ter sua própria plataforma?</h2>
+          <p class="cta-final__subtitle">Fale com nosso time e descubra como o Hype pode transformar a forma como você vende ingressos.</p>
+
+          <div class="cta-final__actions">
+            <!-- WhatsApp: trocar o número 5500000000000 pelo número real -->
+            <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Hype%20e%20quero%20saber%20mais%20sobre%20a%20plataforma%20para%20meus%20eventos." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar pelo WhatsApp
+            </a>
+
+            <span class="cta-final__divider">ou</span>
+
+            <form class="cta-final__form" id="contactForm">
+              <input type="text" name="name" placeholder="Seu nome" required class="input">
+              <input type="email" name="email" placeholder="Seu e-mail" required class="input">
+              <input type="tel" name="phone" placeholder="Seu WhatsApp" required class="input">
+              <button type="submit" class="btn btn--primary btn--lg btn--full">Quero conhecer o Hype</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="header__logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#7C3AED"/>
+              <path d="M10 10h4v12h-4zM18 10h4v12h-4zM14 14h4v4h-4z" fill="#fff"/>
+            </svg>
+            <span>Hype</span>
+          </a>
+          <p class="footer__tagline">Sua própria plataforma de venda de ingressos.</p>
+        </div>
+
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#vantagens">Vantagens</a></li>
+            <li><a href="#comparacao">Comparação</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <ul>
+            <li>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer__social-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </li>
+            <li><a href="mailto:contato@hype.com.br">contato@hype.com.br</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <!-- Trocar pelo CNPJ real da empresa -->
+        <p>CNPJ: 00.000.000/0001-00</p>
+        <p>&copy; 2026 Hype. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-sticky-cta" id="mobileCta">
+    <a href="#contato" class="btn btn--primary btn--full">Fale conosco</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

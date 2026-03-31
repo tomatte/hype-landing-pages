@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hype — Sua própria plataforma de venda de ingressos</title>
+  <meta name="description" content="Tenha sua própria plataforma de venda de ingressos com a sua marca, no seu domínio. Tecnologia pronta. Sem precisar de equipe técnica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <nav class="container header__nav">
+      <a href="#" class="header__logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="currentColor" class="logo-bg"/>
+          <path d="M10 10h4v12h-4zM18 10h4v12h-4zM14 14h4v4h-4z" fill="#fff"/>
+        </svg>
+        <span>Hype</span>
+      </a>
+
+      <ul class="header__links" id="navLinks">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#comparacao">Comparação</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a href="#contato" class="btn btn--primary header__cta">Fale conosco</a>
+
+      <button class="header__hamburger" id="hamburger" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__header">
+        <a href="#" class="header__logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#F97316"/>
+            <path d="M10 10h4v12h-4zM18 10h4v12h-4zM14 14h4v4h-4z" fill="#fff"/>
+          </svg>
+          <span>Hype</span>
+        </a>
+        <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Fechar menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-menu__links">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#comparacao">Comparação</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contato" class="btn btn--primary mobile-menu__cta">Fale conosco</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO (centered layout, phone mockup) ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__glow"></div>
+      <div class="container hero__container">
+        <span class="hero__badge">Plataforma para produtores de eventos</span>
+        <h1 class="hero__title">Venda ingressos com <span class="hero__highlight">a sua marca</span>, no seu domínio.</h1>
+        <p class="hero__subtitle">Tecnologia pronta para usar. Sem equipe técnica. Você cria, personaliza e vende — tudo no seu nome.</p>
+        <a href="#contato" class="btn btn--primary btn--lg hero__cta">Quero conhecer o Hype</a>
+
+        <div class="hero__mockup">
+          <div class="hero__mockup-glow"></div>
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="phone__status">
+                <span>9:41</span>
+                <div class="phone__status-icons">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="17" y="4" width="3" height="16" rx="1"/><rect x="11" y="8" width="3" height="12" rx="1"/><rect x="5" y="12" width="3" height="8" rx="1"/></svg>
+                </div>
+              </div>
+              <div class="phone__header">
+                <span class="phone__brand">Arena Produções</span>
+              </div>
+              <div class="phone__content">
+                <div class="phone__banner">
+                  <span>Festival de Verão 2026</span>
+                </div>
+                <div class="phone__meta">📅 15 Jan · Arena Beach Club</div>
+                <div class="phone__ticket">
+                  <span>Pista</span><span class="phone__price">R$ 80</span>
+                </div>
+                <div class="phone__ticket phone__ticket--active">
+                  <span>VIP</span><span class="phone__price">R$ 150</span>
+                </div>
+                <div class="phone__buy">Comprar Ingresso</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS (animated counters) ============ -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <span class="stats__number" data-target="100" data-suffix="%">0%</span>
+            <span class="stats__label">Sua marca, seu controle</span>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <span class="stats__number" data-target="5" data-prefix="<" data-suffix=" min">0 min</span>
+            <span class="stats__label">Para publicar um evento</span>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <span class="stats__number" data-target="0" data-suffix=" taxa" data-static="Zero">Zero taxa</span>
+            <span class="stats__label">De setup ou adesão</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMAS (editorial layout) ============ -->
+    <section class="problems" id="problemas">
+      <div class="container">
+        <h2 class="section-title">Você ainda vende na<br>plataforma dos outros?</h2>
+
+        <div class="problems__list">
+          <article class="problem" data-reveal>
+            <span class="problem__number">01</span>
+            <div class="problem__content">
+              <h3 class="problem__title">Sua marca fica escondida</h3>
+              <p class="problem__text">Seu público compra na plataforma de terceiros. Quem ganha reconhecimento é a plataforma — não você.</p>
+            </div>
+          </article>
+
+          <article class="problem" data-reveal>
+            <span class="problem__number">02</span>
+            <div class="problem__content">
+              <h3 class="problem__title">Seus clientes não são seus</h3>
+              <p class="problem__text">A base de compradores fica presa em outro sistema. Você não tem acesso direto para se comunicar ou fidelizar.</p>
+            </div>
+          </article>
+
+          <article class="problem" data-reveal>
+            <span class="problem__number">03</span>
+            <div class="problem__content">
+              <h3 class="problem__title">Seus concorrentes aparecem ao lado</h3>
+              <p class="problem__text">Na mesma página onde vendem seu ingresso, o público vê eventos concorrentes competindo pela atenção.</p>
+            </div>
+          </article>
+
+          <article class="problem" data-reveal>
+            <span class="problem__number">04</span>
+            <div class="problem__content">
+              <h3 class="problem__title">Você não controla nada</h3>
+              <p class="problem__text">Regras, taxas, layout — tudo definido por quem controla a plataforma. Você só preenche os campos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA (timeline) ============ -->
+    <section class="timeline-section" id="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Sua plataforma pronta<br>em quatro passos.</h2>
+
+        <div class="timeline">
+          <div class="timeline__line">
+            <div class="timeline__line-fill" id="timelineFill"></div>
+          </div>
+
+          <div class="timeline__step timeline__step--left" data-reveal>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__number">01</span>
+              <h3>Crie sua conta</h3>
+              <p>Cadastre-se e configure sua plataforma com sua logo, suas cores e seu domínio.</p>
+            </div>
+          </div>
+
+          <div class="timeline__step timeline__step--right" data-reveal>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__number">02</span>
+              <h3>Monte seu evento</h3>
+              <p>Defina setores, lotes, preços e formulários. Tudo no seu painel, do jeito que você precisa.</p>
+            </div>
+          </div>
+
+          <div class="timeline__step timeline__step--left" data-reveal>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__number">03</span>
+              <h3>Comece a vender</h3>
+              <p>Compartilhe o link do seu site. Seu público compra com Pix ou cartão e recebe o ingresso na hora.</p>
+            </div>
+          </div>
+
+          <div class="timeline__step timeline__step--right" data-reveal>
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <span class="timeline__number">04</span>
+              <h3>Controle tudo</h3>
+              <p>Check-in por QR Code, relatórios financeiros e gestão completa — tudo na palma da mão.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FUNCIONALIDADES (horizontal cards) ============ -->
+    <section class="features" id="vantagens">
+      <div class="container">
+        <h2 class="section-title">Tudo que você precisa.<br>Nada que você não precisa.</h2>
+        <div class="features__grid">
+
+          <div class="feature" data-reveal>
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="feature__text">
+              <h3>Sua marca em tudo</h3>
+              <p>Seu logo, suas cores, seu domínio. O Hype fica invisível para o seu público.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-reveal>
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84z"/><path d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/><path d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59"/></svg>
+            </div>
+            <div class="feature__text">
+              <h3>Flexibilidade total</h3>
+              <p>Pista, VIP, camarote, lotes por período — configure como quiser.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-reveal>
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            </div>
+            <div class="feature__text">
+              <h3>Pagamento na hora</h3>
+              <p>Pix e cartão de crédito integrados. Confirmação automática.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-reveal>
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="5" height="5" x="3" y="3"/><rect width="5" height="5" x="16" y="3"/><rect width="5" height="5" x="3" y="16"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>
+            </div>
+            <div class="feature__text">
+              <h3>Entrada sem filas</h3>
+              <p>QR Code único por ingresso. Valide pelo celular em tempo real.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-reveal>
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="feature__text">
+              <h3>Colete o que precisar</h3>
+              <p>CPF, tamanho de camiseta, restrição alimentar — você decide.</p>
+            </div>
+          </div>
+
+          <div class="feature" data-reveal>
+            <div class="feature__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" x2="7.01" y1="7" y2="7"/></svg>
+            </div>
+            <div class="feature__text">
+              <h3>Marketing integrado</h3>
+              <p>Crie cupons por valor ou percentual para campanhas e parceiros.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPARAÇÃO (two panels) ============ -->
+    <section class="comparison" id="comparacao">
+      <div class="container">
+        <h2 class="section-title">A diferença é clara.</h2>
+        <div class="comparison__panels">
+
+          <div class="panel panel--before" data-reveal>
+            <div class="panel__header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              <span>Plataformas genéricas</span>
+            </div>
+            <ul class="panel__list">
+              <li>A marca da plataforma, não a sua</li>
+              <li>Base de clientes pertence à plataforma</li>
+              <li>Eventos concorrentes exibidos ao lado</li>
+              <li>Personalização limitada</li>
+              <li>Controle nas mãos da plataforma</li>
+              <li>Gateway de pagamento alheio</li>
+            </ul>
+          </div>
+
+          <div class="panel panel--after" data-reveal>
+            <div class="panel__header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="16 10 10.5 15.5 8 13"/></svg>
+              <span>Com o Hype</span>
+            </div>
+            <ul class="panel__list">
+              <li>Sua marca em tudo — o Hype fica invisível</li>
+              <li>Seus clientes são seus</li>
+              <li>Plataforma exclusiva, sem concorrentes</li>
+              <li>Personalização total</li>
+              <li>Controle completo no seu painel</li>
+              <li>Pix e cartão no seu nome</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARA QUEM ============ -->
+    <section class="audience" id="para-quem">
+      <div class="container">
+        <h2 class="section-title">Feito para quem faz<br>eventos acontecerem.</h2>
+        <div class="audience__grid">
+
+          <div class="audience__card" data-reveal>
+            <div class="audience__emoji">🎤</div>
+            <h3>Produtores e organizadores</h3>
+            <p>Fortaleça sua marca. Seus clientes compram no seu site, não em plataformas de terceiros.</p>
+          </div>
+
+          <div class="audience__card" data-reveal>
+            <div class="audience__emoji">🎧</div>
+            <h3>DJs e músicos</h3>
+            <p>Venda ingressos dos seus shows sem complicação. Seu público compra direto de você.</p>
+          </div>
+
+          <div class="audience__card" data-reveal>
+            <div class="audience__emoji">🏠</div>
+            <h3>Casas de show</h3>
+            <p>Profissionalize vendas e check-in. Relatórios, controle e uma plataforma com a cara do seu espaço.</p>
+          </div>
+
+          <div class="audience__card" data-reveal>
+            <div class="audience__emoji">📊</div>
+            <h3>Empresários e promoters</h3>
+            <p>Gestão completa: financeiro, cupons, formulários e dados — tudo em um painel só.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Perguntas frequentes</h2>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>O que é o Hype exatamente?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>O Hype é uma plataforma completa de venda de ingressos que funciona com a sua marca. Você recebe seu próprio site de vendas, painel de gestão e sistema de check-in — sem precisar desenvolver nada.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Meu público vai ver a marca do Hype?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Não. O Hype é invisível para o comprador. Ele acessa o seu site, vê a sua marca e compra na sua plataforma.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Preciso ter conhecimento técnico?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Não. O painel é intuitivo e pensado para quem não é da área de tecnologia. Se você usa redes sociais, consegue usar o Hype.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Quais formas de pagamento são aceitas?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Pix e cartão de crédito — os dois métodos mais usados no Brasil. A confirmação é automática e o ingresso é enviado por e-mail na hora.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Como funciona o check-in?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Cada ingresso tem um QR Code único. Na entrada do evento, é só escanear com o celular. O sistema valida em tempo real e impede duplicidade.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Quanto custa?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Entre em contato com nosso time para conhecer os planos disponíveis. Vamos entender sua operação e apresentar a melhor opção.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">
+              <span>Já posso usar agora?</span>
+              <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Estamos em fase de onboarding com produtores selecionados. Entre em contato para garantir sua vaga e ser um dos primeiros a usar a plataforma.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta-final" id="contato">
+      <div class="container">
+        <div class="cta-final__content" data-reveal>
+          <h2 class="cta-final__title">Pronto para ter sua<br>própria plataforma?</h2>
+          <p class="cta-final__subtitle">Fale com nosso time e descubra como o Hype pode transformar a forma como você vende ingressos.</p>
+
+          <div class="cta-final__actions">
+            <!-- Trocar 5500000000000 pelo número real -->
+            <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Hype%20e%20quero%20saber%20mais%20sobre%20a%20plataforma%20para%20meus%20eventos." class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar pelo WhatsApp
+            </a>
+
+            <span class="cta-final__divider">ou preencha abaixo</span>
+
+            <form class="cta-final__form" id="contactForm">
+              <input type="text" name="name" placeholder="Seu nome" required class="input">
+              <input type="email" name="email" placeholder="Seu e-mail" required class="input">
+              <input type="tel" name="phone" placeholder="Seu WhatsApp" required class="input">
+              <button type="submit" class="btn btn--primary btn--lg btn--full">Quero conhecer o Hype</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="header__logo">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#F97316"/>
+              <path d="M10 10h4v12h-4zM18 10h4v12h-4zM14 14h4v4h-4z" fill="#fff"/>
+            </svg>
+            <span>Hype</span>
+          </a>
+          <p>Sua própria plataforma de venda de ingressos.</p>
+        </div>
+        <div class="footer__nav">
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#vantagens">Vantagens</a>
+          <a href="#comparacao">Comparação</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer__social">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="mailto:contato@hype.com.br" aria-label="E-mail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>CNPJ: 00.000.000/0001-00</span>
+        <span>&copy; 2026 Hype. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-sticky-cta" id="mobileCta">
+    <a href="#contato" class="btn btn--primary btn--full">Fale conosco</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
